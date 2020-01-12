@@ -54,8 +54,9 @@ $event_id = get_the_ID();
 	<!-- #tribe-events-header -->
 
 	<?php while ( have_posts() ) :  the_post(); ?>
-		<!-- comment v 1.8-->
-		
+		<!-- comment v 1.9-->
+		<?php $additional_fields = tribe_get_custom_fields();
+		echo $additional_fields['Registration URL'];	?>
 
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
