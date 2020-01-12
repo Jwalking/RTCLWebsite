@@ -54,12 +54,12 @@ $event_id = get_the_ID();
 	<!-- #tribe-events-header -->
 
 	<?php while ( have_posts() ) :  the_post(); ?>
+		<!-- comment v 1.7-->
+		<?php $additional_fields = tribe_get_custom_fields();
+		echo $additional_fields['Registration URL'];	?>
 
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
-			<!-- comment v 1.6-->
-			
-
 			<!-- Event featured image, but exclude link -->
 			<?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
 
