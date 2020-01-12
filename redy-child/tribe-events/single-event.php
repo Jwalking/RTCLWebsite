@@ -1,5 +1,5 @@
 <?php
-/** 
+/**  
  * Single Event Template
  * A single event. This displays the event title, description, meta, and
  * optionally, the Google map for the event.
